@@ -7,7 +7,6 @@ pipeline {
                 checkout scm
             }
         }
-    }
         stage("Testing - UT IT") {
 
         }
@@ -17,4 +16,5 @@ pipeline {
             }
         
         }
+    }
 }
