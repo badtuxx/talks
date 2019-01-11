@@ -15,7 +15,7 @@ pipeline {
         }
         stage("Build") {
             steps {
-                sh "/bin/cat ./talks/LICENSE"
+                sh "/bin/cat LICENSE"
             }
         
         }
