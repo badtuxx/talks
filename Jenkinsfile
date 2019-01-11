@@ -8,6 +8,9 @@ pipeline {
             }
         }
         stage("Testing - UT IT") {
+            steps {
+                echo 'Testing..'
+            }
 
         }
         stage("Build") {
@@ -18,3 +21,4 @@ pipeline {
         }
     }
 }
+
