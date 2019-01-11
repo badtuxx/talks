@@ -2,14 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage ("Cloning repo") {
-            checkout scm
+        stage("Cloning repo") {
+            steps {
+                checkout scm
+            }
         }
     }
-        stage ("Testing - UT IT") {
+        stage("Testing - UT IT") {
 
         }
-        stage ("Build") {
-            sh "/bin/cat ./talks/LICENSE"
+        stage("Build") {
+            steps {
+                sh "/bin/cat ./talks/LICENSE"
+            }
+        
         }
 }
