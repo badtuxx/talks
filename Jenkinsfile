@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage("Cloning repo") {
+        stage("pre-checks") {
             steps {
-                checkout scm
+                echo 'pre-checks'
             }
         }
         stage("Testing - UT IT") {
